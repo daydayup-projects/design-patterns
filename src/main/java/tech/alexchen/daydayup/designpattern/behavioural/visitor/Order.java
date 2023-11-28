@@ -27,6 +27,7 @@ public class Order implements Element {
     public void addItem(Item item) {
         items.add(item);
     }
+
     @Override
     public void accept(Visitor visitor) {
         // 先访问自己

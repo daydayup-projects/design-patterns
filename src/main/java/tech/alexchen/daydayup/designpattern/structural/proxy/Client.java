@@ -20,7 +20,7 @@ public class Client {
         staticProxy.operation();
 
         // 动态代理
-        Subject dynamicProxy = (Subject)Proxy.newProxyInstance(realSubject.getClass().getClassLoader(),
+        Subject dynamicProxy = (Subject) Proxy.newProxyInstance(realSubject.getClass().getClassLoader(),
                 realSubject.getClass().getInterfaces(),
                 // InvocationHandler 的实现类
                 (p, method, params) -> {

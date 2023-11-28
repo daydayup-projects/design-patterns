@@ -6,7 +6,7 @@ package tech.alexchen.daydayup.designpattern.structural.facade.slf4j;
  */
 public final class LoggerFactory {
 
-    public static  Logger getLogger(Class clazz) {
+    public static Logger getLogger(Class clazz) {
         return getLogger(clazz.getName());
     }
 

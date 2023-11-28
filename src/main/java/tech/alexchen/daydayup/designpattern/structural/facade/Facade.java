@@ -7,6 +7,7 @@ package tech.alexchen.daydayup.designpattern.structural.facade;
 public class Facade extends AbstractFacade {
 
     private SubSystem subSystem = new SubSystem();
+
     @Override
     void watchMovie() {
         subSystem.turnOnTV();

@@ -6,5 +6,5 @@ package tech.alexchen.daydayup.designpattern.behavioural.chain.filter;
  */
 public interface Filter {
 
-    void doFilter(Request request,Response response,FilterChain chain);
+    void doFilter(Request request, Response response, FilterChain chain);
 }

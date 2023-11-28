@@ -12,6 +12,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public abstract class DriverManager {
 
     private static CopyOnWriteArrayList<Driver> registeredDrivers = new CopyOnWriteArrayList<>();
+
     public static void registerDriver(Driver driver) {
         registeredDrivers.addIfAbsent(driver);
     }
@@ -25,7 +26,8 @@ public abstract class DriverManager {
         }
         throw new SQLException("No suitable driver");
     }
+
     public static Connection getConnection(String url) {
-       return getDriver(url).connection(url);
+        return getDriver(url).connection(url);
     }
 }

@@ -15,7 +15,8 @@ public class FilterChain {
 
     private final ThreadLocal<Integer> index = ThreadLocal.withInitial(() -> 0);
 
-    public FilterChain() {}
+    public FilterChain() {
+    }
 
     public FilterChain(List<Filter> filters) {
         this.filters.addAll(filters);

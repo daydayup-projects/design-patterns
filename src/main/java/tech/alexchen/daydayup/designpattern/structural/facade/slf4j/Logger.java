@@ -7,9 +7,14 @@ package tech.alexchen.daydayup.designpattern.structural.facade.slf4j;
 public interface Logger {
 
     String getName();
+
     void trace(String logInfo);
+
     void debug(String logInfo);
+
     void info(String logInfo);
+
     void warn(String logInfo);
+
     void error(String logInfo);
 }

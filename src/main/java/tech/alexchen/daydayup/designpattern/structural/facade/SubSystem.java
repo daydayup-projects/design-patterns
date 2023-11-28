@@ -14,7 +14,7 @@ public class SubSystem {
         System.out.println("setCD( " + cd + " )");
     }
 
-    public void starWatching(){
+    public void starWatching() {
         System.out.println("starWatching()");
     }
 }
